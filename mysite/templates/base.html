@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<title></title>
+<script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+{% load staticfiles %}
+<link rel="stylesheet" href="{{STATIC_URLS}}css/bootstrap.css" type="text/css" media="screen" />
+<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="/time">Holiday Planner</a>
+    <ul class="nav">
+      <li class="active"><a href="/time">Home</a></li>
+      <li><a href="/persons">Persons</a></li>
+      <li><a href="/add_person">Add person</a></li>
+        <li><a href="/holidayplanner">Holiday planner</a></li>
+      <li><a href="/planner_info">Plan information</a></li>
+    </ul>
+  </div>
+</div>
+{% block content %}{% endblock %}
+{% block footer %}
+<hr>
+<p>Thanks for visiting my site.</p>
+{% endblock %}
+
+</body>
+</html>

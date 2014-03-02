@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Holidays in our Database</h2>
+    <ul>
+       {% for planner in planner_lists %}
+            <li> {{planner}} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

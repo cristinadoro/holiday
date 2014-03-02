@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Plan your holiday</h2>
+<form enctype="multipart/form-data" action="." method="POST">{% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <p><input type="submit" value="Submit"></p>
+</form>
+{% endblock %}
